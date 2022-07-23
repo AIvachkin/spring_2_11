@@ -1,11 +1,15 @@
 package pro.sky.spring_2_11.Model;
 
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.context.annotation.SessionScope;
+
 import java.util.Objects;
 
 public class Basket {
 
     private final String product;
     private final Integer category;
+
 
     public Basket(Integer category, String product) {
         this.category = category;
