@@ -29,7 +29,7 @@ public class BasketController {
 
     @GetMapping("/get")
     public List<Basket> getProduct() {
-return basketService.getProducts() ;
+        return basketService.getProducts();
 
     }
 

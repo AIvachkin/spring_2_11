@@ -8,8 +8,16 @@ public class Basket {
     private final Integer category;
 
     public Basket(Integer category, String product) {
-        this.product = product;
         this.category = category;
+        this.product = product;
+    }
+
+    public String getProduct() {
+        return product;
+    }
+
+    public Integer getCategory() {
+        return category;
     }
 
     @Override
@@ -23,5 +31,13 @@ public class Basket {
     @Override
     public int hashCode() {
         return Objects.hash(product, category);
+    }
+
+    @Override
+    public String toString() {
+        return "Basket{" +
+                "product='" + product + '\'' +
+                ", category=" + category +
+                '}';
     }
 }
