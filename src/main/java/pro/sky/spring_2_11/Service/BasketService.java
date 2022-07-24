@@ -12,6 +12,7 @@ import java.util.List;
 @Service
 //@Scope("prototype")
 //@Scope("session")
+@SessionScope
 public class BasketService {
 
     private final List<Basket> basketList = new ArrayList<>();
