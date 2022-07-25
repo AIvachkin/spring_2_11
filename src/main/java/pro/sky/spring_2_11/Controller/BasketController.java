@@ -30,6 +30,18 @@ public class BasketController {
         return basketService.addProduct(category, product);
     }
 
+
+//    Добавление сразу любого числа товаров в корзину
+//@GetMapping("/add")
+//public String addProduct(@RequestParam(value = "category") Integer [] ids) {
+//        for (int i=0; i<ids.length; i++){
+//            BasketService.add(ids[i]);
+//        }
+//
+//    return "Товары добавлены";
+//}
+
+
     @GetMapping("/get")
     public List<Basket> getProduct() {
         return basketService.getProducts();
