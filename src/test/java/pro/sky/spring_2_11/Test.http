@@ -1,0 +1,7 @@
+GET http://localhost:8080/store/order/add?category=1&product=Tea
+###
+GET http://localhost:8080/store/order/add?category=2&product=Cup
+###
+GET http://localhost:8080/store/order/get
+
+

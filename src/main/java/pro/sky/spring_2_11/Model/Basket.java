@@ -1,5 +1,8 @@
 package pro.sky.spring_2_11.Model;
 
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.context.annotation.SessionScope;
+
 import java.util.Objects;
 
 public class Basket {
@@ -7,9 +10,18 @@ public class Basket {
     private final String product;
     private final Integer category;
 
+
     public Basket(Integer category, String product) {
-        this.product = product;
         this.category = category;
+        this.product = product;
+    }
+
+    public String getProduct() {
+        return product;
+    }
+
+    public Integer getCategory() {
+        return category;
     }
 
     @Override
@@ -23,5 +35,13 @@ public class Basket {
     @Override
     public int hashCode() {
         return Objects.hash(product, category);
+    }
+
+    @Override
+    public String toString() {
+        return "Basket{" +
+                "product='" + product + '\'' +
+                ", category=" + category +
+                '}';
     }
 }
